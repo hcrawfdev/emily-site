@@ -1,17 +1,18 @@
 <script>
 	import { goto } from '$app/navigation';
+  import { base } from "$app/paths";
 </script>
 
 <div id="content-div">
 	<img
 		alt="Professional young women with ivy covered bricks in the background."
 		class="cta-image"
-		src="/EMC-LinkedIn.png"
+		src="{base}/EMC-LinkedIn.png"
 	/>
 	<div class="link-buttons">
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 
-		<button on:click={() => goto('/about')} class="link-button">
+		<button on:click={() => goto(`${base}/about`)} class="link-button">
 			<span>About</span>
 		</button>
 		<button class="link-button">
