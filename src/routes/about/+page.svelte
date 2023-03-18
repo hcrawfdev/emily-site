@@ -1,3 +1,7 @@
+<script>
+      import { base } from "$app/paths";
+
+</script>
 <div id="content-div" class="about-div">
 	<div class="about-text">
 		<h2>Born and raised in Cincinnati, OH.</h2>
@@ -27,7 +31,7 @@
 			exploring the outdoors.
 		</p>
 	</div>
-	<img class="about-img" alt="" src="/ivy-em-bg.jpg" />
+	<img class="about-img" alt="" src="{base}/ivy-em-bg.jpg" />
 </div>
 
 <style>
