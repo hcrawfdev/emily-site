@@ -18,8 +18,8 @@
 		<button class="link-button">
 			<span>Service</span>
 		</button>
-		<button class="link-button">
-			<span>Shop</span>
+		<button class="link-button disabled" disabled>
+			<span>Shop (Coming Soon)</span>
 		</button>
 	</div>
 </div>
@@ -59,8 +59,14 @@
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 	}
 
-	.link-button::before,
-	.link-button::after {
+	:global(.link-button.disabled) {
+		pointer-events: none;
+		color:lightgrey;
+		background-color: lightgrey;
+	}
+
+	.link-button:not(.disabled)::before,
+	.link-button:not(.disabled)::after {
 		position: absolute;
 		display: block;
 		content: '';
@@ -72,7 +78,7 @@
 		color: #111;
 	}
 
-	.link-button:after {
+	.link-button:not(.disabled):after {
 		width: 300%;
 		height: 450%;
 		left: -300%;
@@ -81,17 +87,17 @@
 		transition: all 300ms ease;
 	}
 
-	.link-button:hover span {
+	.link-button:not(.disabled):hover span {
 		color: #fff;
 		z-index: 10;
 		font-weight: 600;
 	}
 
-	.link-button:hover::after {
+	.link-button:not(.disabled):hover::after {
 		left: -100%;
 	}
 
-	.link-button:hover {
+	.link-button:not(.disabled):hover {
 		border: 2px solid #1b0c3d;
 		cursor: pointer;
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.9) 0px 30px 60px -30px;

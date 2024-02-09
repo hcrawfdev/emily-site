@@ -21,9 +21,10 @@
 		<p>
 			After graduation, Emily landed a job with Total Quality Logistics. After a time in their sales
 			department, she transitioned to a role on the Client Services team (known internally as the
-			Prospecting Department) and quickly landed a promotion to Sales Data Analyst. Daily, Emily
-			gets to interact with external clients, internal salesreps, and create actionable synergies
-			amongst internal departments. She wants to continue to make an impact on the CPG products and
+			Prospecting Department) and quickly landed a promotion to Sales Data Analyst. In that position, Emily
+			got to interact with external clients, internal salesreps, and create actionable synergies
+			amongst internal departments. Emily upskilled by learning SQL and Power BI. She now uses those skills daily as a Project Analyst.
+			She wants to continue to make an impact on the CPG products and
 			brands that consumers need and trust.
 		</p>
 		<p>
@@ -46,8 +47,8 @@
 	}
 
 	.about-img {
-		width: 400px;
-		height: 400px;
+		width: 500px;
+		height: 500px;
 		grid-area: picture;
 		box-shadow: 17px 15px 12px 5px rgba(0, 0, 0, 0.42);
 		border: 1px solid black;
@@ -62,7 +63,7 @@
 		align-content: center;
 		flex-direction: column;
 		padding-right: 10px;
-        width: 60%;
+        width: 50%;
 	}
 
 	.about-div {

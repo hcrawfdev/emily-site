@@ -28,7 +28,7 @@
 		</li>
 	</ul>
 	<p>
-		Besides returning each year as a volunteer, she has served on the seminar planning committee and
+		Besides returning from 2014-2017 as a volunteer, she has served on the seminar planning committee and
 		the Alumni Board.
 	</p>
 </main>

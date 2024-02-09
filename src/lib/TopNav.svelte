@@ -1,13 +1,28 @@
 <script>
-      import { base } from "$app/paths";
-
+	import { base } from '$app/paths';
+	import { Instagram, Linkedin } from 'lucide-svelte';
 </script>
+
 <div class="top-nav">
-	<a class="name-title" href="{base}/">Emily Crawford</a>
+	<div class="socials">
+		<div>
+			<img
+		alt="Professional young women with ivy covered bricks in the background."
+		style="width: 50px; height: 50px;"
+		src="{base}/eCm.png"
+	/>
+		</div>
+		<a class="nav-link" href="https://www.instagram.com/lensofemc">
+			<Instagram size="24" />
+		</a>
+		<a class="nav-link" href="https://www.linkedin.com/in/emilymwebb/">
+			<Linkedin size="24" />
+		</a>
+	</div>
 	<div class="nav-links">
 		<a class="nav-link" href="{base}/about">About</a>
 		<a class="nav-link" href="{base}/service">Service</a>
-		<a class="nav-link" href="{base}/">Shop</a>
+		<a class="nav-link" style="color:lightgrey; cursor:not-allowed" href="{base}/">Shop</a>
 	</div>
 </div>
 
@@ -37,8 +52,14 @@
 		align-content: center;
 	}
 
+	.socials {
+		display: flex;
+		width: 100%;
+		align-items: center
+	}
+
 	.nav-links {
-		align-self: center;
+		align-self: flex-end;
 		display: flex;
 	}
 
